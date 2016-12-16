@@ -1,11 +1,14 @@
 " Sample .vimrc file by Martin Brochhaus
 " Presented at PyCon APAC 2012
+" modify by fariver in 2016
 
 " ============================================
 " Note to myself:
 " DO NOT USE <C-z> FOR SAVING WHEN PRESENTING!
 " ============================================
 
+"for install all the plugin in this file
+"you need care about all commond of wget, git clone and curl(for plugin manager)
 
 " Automatic reloading of .vimrc
 "" autocmd! bufwritepost .vimrc source %
@@ -167,6 +170,8 @@
 " and uncomment the part about jedi-vim instead
 " cd ~/.vim/bundle
 " git clone https://github.com/klen/python-mode
+" for the plugin is not latest version, we need run the follow command either
+" git submodule update --init
  map <Leader>g :call RopeGotoDefinition()<CR>
  let ropevim_enable_shortcuts = 1
  let g:pymode_rope_goto_def_newwin = "vnew"
