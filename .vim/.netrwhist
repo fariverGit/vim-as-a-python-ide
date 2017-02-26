@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/wangyuanjiang/Documents/caffedocker/mnist/mnist'
+let g:netrw_dirhist_2='/home/wangyuanjiang/Documents/dataset/human36/decompressing/byaction'
+let g:netrw_dirhist_3='/home/wangyuanjiang/Documents/caffedocker/videoto3Dwith2Dinfo/data/backup'
+let g:netrw_dirhist_4='/home/wangyuanjiang/Documents/caffedocker/mnist/mnist'

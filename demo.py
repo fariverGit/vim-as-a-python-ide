@@ -22,6 +22,7 @@ def fold_all():
 
 def create_ropeproject():
     """We would create a ropeproject by executing ``:RopeOpenProject``."""
+    import ipdb; ipdb.set_trace() # BREAKPOINT
     print 'Now add your venv to ``.ropeproject/config.py``!'
 
 

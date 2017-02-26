@@ -1,14 +1,11 @@
 " Sample .vimrc file by Martin Brochhaus
 " Presented at PyCon APAC 2012
-" modify by fariver in 2016
 
 " ============================================
 " Note to myself:
 " DO NOT USE <C-z> FOR SAVING WHEN PRESENTING!
 " ============================================
 
-"for install all the plugin in this file
-"you need care about all commond of wget, git clone and curl(for plugin manager)
 
 " Automatic reloading of .vimrc
 "" autocmd! bufwritepost .vimrc source %
@@ -170,24 +167,22 @@
 " and uncomment the part about jedi-vim instead
 " cd ~/.vim/bundle
 " git clone https://github.com/klen/python-mode
-" for the plugin is not latest version, we need run the follow command either
-" git submodule update --init
- map <Leader>g :call RopeGotoDefinition()<CR>
- let ropevim_enable_shortcuts = 1
- let g:pymode_rope_goto_def_newwin = "vnew"
- let g:pymode_rope_extended_complete = 1
- let g:pymode_breakpoint = 0
- let g:pymode_syntax = 1
- let g:pymode_syntax_builtin_objs = 0
- let g:pymode_syntax_builtin_funcs = 0
- map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
+" map <Leader>g :call RopeGotoDefinition()<CR>
+" let g:pymode_rope_goto_def_newwin = "vnew"
+" let g:pymode_rope_extended_complete = 1
+" let g:pymode_breakpoint = 0
+" let g:pymode_syntax = 1
+" let g:pymode_syntax_builtin_objs = 0
+" let g:pymode_syntax_builtin_funcs = 0
+" map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
 
 " Settings for jedi-vim
-" cd ~/.vim/bundle
-" git clone git://github.com/davidhalter/jedi-vim.git
- let g:jedi#usages_command = "<leader>z"
- let g:jedi#popup_on_dot = 0
- let g:jedi#popup_select_first = 0
+" " cd ~/.vim/bundle
+" " git clone git://github.com/davidhalter/jedi-vim.git
+  let g:jedi#auto_initialization = 0
+  let g:jedi#usages_command = "<leader>z"
+  let g:jedi#popup_on_dot = 0
+  let g:jedi#popup_select_first = 0
  map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
 
 " Better navigating through omnicomplete option list
