@@ -15,6 +15,9 @@ plugin, which I find a bit easier to configure and it seems to have better
 auto-completion features.
 and I find if you want to use auto-completion by tab, you must install supertab
 
+quickfix
+use <c+j> to jump into warning selecting interface and :q to close it
+
 you need:
 ```
 cd bundle
