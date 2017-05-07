@@ -14,3 +14,9 @@ plugin. Instead I am now using the [jedi-vim](https://github.com/davidhalter/jed
 plugin, which I find a bit easier to configure and it seems to have better
 auto-completion features.
 and I find if you want to use auto-completion by tab, you must install supertab
+
+you need:
+```
+cd bundle
+sh git.sh
+```
